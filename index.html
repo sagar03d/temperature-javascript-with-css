@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="value" />
+    <title>Temperature</title>
+    <link href="img/icon/text.png" rel="icon" type="icon/png">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="javascript/script.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,600i,700" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <!-- HEADING SECTION -->
+
+    <div class="body-color">
+        <header>
+            <h1> Temperature Conversion using JavaScript </h1>
+        </header>
+
+
+        <div id="current-time"></div>
+
+        <script>
+            document.getElementById("current-time").innerHTML = Date();
+        </script>
+
+
+        <!-- FORM SECTION -->
+
+        <div id="form">
+            <div class="class-form">
+                <form name="tempForm">
+                    <label for="temp">Temperature:</label>
+                    <input type="text" id="temp"><br>
+
+                    <div class="button">
+                        <div class="align">
+                            <input type="radio" name="choice" value="fahrenheit" checked />Convert to Fahrenheit <br>
+                            <input type="radio" name="choice" value="celsius">Convert to Celsius <br>
+                        </div>
+                    </div>
+
+                    <label for="resultField">Result: </label>
+                    <input type="text" id="resultField"><br>
+
+                    <div class="button-convert">
+                        <input type="button" value="Convert" onclick="processForm()">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+            <a href="https://github.com/cristiancronus"> <img src="img/icon/github.png" alt="Github Logo" class="social-link"> </a>
+            <a href="https://twitter.com/hey_imcristian"> <img src="img/icon/twitter.png" alt="Twitter Logo" class="social-link"> </a>
+            <a href="https://www.linkedin.com/in/cristianpaul/"> <img src="img/icon/linkedin.png" alt="linkedin Logo" class="social-link"> </a>
+            <p>
+                &copy; 2017, Cristian Paul Castaneda
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
