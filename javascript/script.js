@@ -1,3 +1,13 @@
+
+function timeupdate(){
+    setInterval("time()",1000);
+}
+
+function time(){
+    var t = Date();
+    document.getElementById("current-time").innerHTML = t;
+}
+
 function processForm() {
 
     // Vars
